@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "test",
+      "password": "test"
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "email": "admin@gmail.com",
+      "password": "admin123"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "name": "test book",
+      "description": "test description"
+    },
+    {
+      "Name": "",
+      "Description": "",
+      "id": 2
+    },
+    {
+      "Name": "dhdhd",
+      "Description": "jjdjd",
+      "id": 3
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "bookID": 1,
+      "userID": 1
+    }
+  ]
+}

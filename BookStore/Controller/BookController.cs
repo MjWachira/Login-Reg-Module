@@ -45,13 +45,14 @@ namespace BookStore.Controller
                 case 2:
                     await getBooks();
                     break;
-                    /*
+               
                 case 3:
-                    await updateProductUI();
+                    await updateBook();
                     break;
+        
                 case 4:
-                    await deleteProduct();
-                    break; */
+                    await deleteBook();
+                    break; 
 
             }
 
@@ -86,53 +87,55 @@ namespace BookStore.Controller
             await init();
         }
         
-        public async Task getBooks()
+        public  async Task getBooks()
         {
-            var books = await BookService.GetBooksAsync();
+            var books = await bookService.GetBooksAsync();
             Console.WriteLine($"Id \t Name \t Description");
             foreach (var book in books)
             {
                 Console.WriteLine($" {book.Id} \t {book.Name} \t {book.Description}");
             }
+
         }
-        /*
-        public async Task updateProductUI()
+
+       
+        public async Task updateBook()
         {
-            await showProducts();
-            Console.WriteLine("Select Product Update by Id :");
-            var prod = Console.ReadLine();
-            var output = int.TryParse(prod, out int ProductId);
-            Console.WriteLine("  Product Name: ");
+            await getBooks();
+            Console.WriteLine("Select Book Update by Id :");
+            var book = Console.ReadLine();
+            var output = int.TryParse(book, out int bookID);
+            Console.WriteLine("  Book Name: ");
             var Name = Console.ReadLine();
 
-            Console.WriteLine(" Product Description: ");
+            Console.WriteLine(" Book Description: ");
             var Description = Console.ReadLine();
 
 
-            Console.WriteLine(" Product Price: ");
-            var priceStr = Console.ReadLine();
-            var res = int.TryParse(priceStr, out int Price);
-            var updatedProduct = new AddProduct() { Name = Name, Description = Description, Price = Price };
-            await updateProductRequest(ProductId, updatedProduct);
+            
+            var updatedBook = new AddBook() { Name = Name, Description = Description};
+            await updateBookRequest(bookID, updatedBook);
         }
 
 
-        public async Task updateProductRequest(int productId, AddProduct updatedProduct)
+        public async Task updateBookRequest(int bookID, AddBook updatedBook)
         {
-            var response = await productService.UpdateProduct(productId, updatedProduct);
+            var response = await bookService.UpdateBook(bookID, updatedBook);
             Console.WriteLine(response);
             await init();
         }
-
-        public async Task deleteProduct()
+        
+        public async Task deleteBook()
         {
-            await showProducts();
-            Console.WriteLine("Select Product to Delete by Id :");
-            var prod = Console.ReadLine();
-            var output = int.TryParse(prod, out int ProductId);
-            var response = await productService.DeleteProduct(ProductId);
+            await getBooks();
+            Console.WriteLine("Select a Book to Delete by Id :");
+            var book = Console.ReadLine();
+            var output = int.TryParse(book, out int bookID);
+            var response = await bookService.DeleteBook(bookID);
             Console.WriteLine(response);
+            await init();
+
         }
-        */
+        
     }
 }

@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BooksModel\BooksModels.csproj" />
+    <ProjectReference Include="..\UserModel\UserModel.csproj" />
   </ItemGroup>
 
 </Project>

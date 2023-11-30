@@ -1,9 +1,29 @@
 {
   "users": [
     {
-      "id": 1,
       "username": "test",
-      "password": "test"
+      "password": "test",
+      "id": 1
+    },
+    {
+      "username": "James",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "UserName": "Gordon",
+      "Password": "1234",
+      "id": 3
+    },
+    {
+      "UserName": "Don",
+      "Password": "789",
+      "id": 4
+    },
+    {
+      "UserName": "Arsenal",
+      "Password": "6000",
+      "id": 5
     }
   ],
   "admin": [
@@ -20,13 +40,13 @@
       "description": "test description"
     },
     {
-      "Name": "",
-      "Description": "",
+      "Name": "kidagaa",
+      "Description": "kimemuozea naanii",
       "id": 2
     },
     {
-      "Name": "dhdhd",
-      "Description": "jjdjd",
+      "Name": "john kiriamiti",
+      "Description": "he eats trees",
       "id": 3
     }
   ],

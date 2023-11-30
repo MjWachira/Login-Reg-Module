@@ -53,7 +53,7 @@ namespace BookStore.Services
 
         }
 
-        public async Task<List<Book>> GetBooksAsync()
+        public  async Task<List<Book>> GetBooksAsync()
         {
             var response = await _httpClient.GetAsync(URL);
             var content = await response.Content.ReadAsStringAsync();//string

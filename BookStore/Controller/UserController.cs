@@ -89,28 +89,37 @@ namespace BookStore.Controller
             Console.WriteLine("Enter Password");
             string password2 = Console.ReadLine();
 
-            foreach (var user in users)
+            try 
             {
-                if (user.UserName ==userName2 && user.Password==password2)
+                foreach (var user in users)
                 {
+                    if (user.UserName == userName2 && user.Password == password2)
+                    {
+                        await Console.Out.WriteLineAsync("");
 
-                    await Console.Out.WriteLineAsync("login successfull");
-                    Console.WriteLine($"Welcome {userName2}");
+                        await Console.Out.WriteLineAsync("login successfull....");
+                        await Console.Out.WriteLineAsync("");
+                        Console.WriteLine($"########## Welcome: {userName2.ToUpper()} ##########");
+                        await Console.Out.WriteLineAsync("");
+                        await getBooks();
+                        break;
+                     }
+                    else
+                    {
+                        Console.WriteLine("Incorrect Details Login again...");
+                    }
                     
-                    await getBooks();
-
                     
-                    //await init();
-                }
-                else
-                {
-                    Console.WriteLine(" ");
-                    Console.WriteLine("Check Details");
-                    Console.WriteLine(" ");
-                    await init();
-                }
+                    
 
+                }
+                await init();
             }
+            catch
+            {
+                
+            }
+           
 
           
                 

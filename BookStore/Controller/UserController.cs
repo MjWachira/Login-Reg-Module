@@ -102,6 +102,7 @@ namespace BookStore.Controller
                         Console.WriteLine($"########## Welcome: {userName2.ToUpper()} ##########");
                         await Console.Out.WriteLineAsync("");
                         await getBooks();
+
                         break;
                      }
                     else

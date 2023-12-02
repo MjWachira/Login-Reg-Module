@@ -1,4 +1,4 @@
-﻿using BooksModels;
+﻿using BookStore.Models.Book;
 using BookStore.Services.IServices;
 using Newtonsoft.Json;
 using System;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Services
 {
-    public class BookService:IBook
+    public class BookService : IBook
     {
         private readonly HttpClient _httpClient;
         private readonly string URL = "http://localhost:3000/books";

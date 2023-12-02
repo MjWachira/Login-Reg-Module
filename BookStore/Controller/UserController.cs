@@ -1,4 +1,4 @@
-﻿using BooksModels;
+﻿using BookStore.Models.User;
 using BookStore.Services;
 using BookStore.Services.IServices;
 using System;
@@ -7,7 +7,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UserModel;
 
 namespace BookStore.Controller
 {

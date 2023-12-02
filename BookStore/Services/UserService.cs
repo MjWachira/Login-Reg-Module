@@ -1,4 +1,5 @@
-﻿using BooksModels;
+﻿using BookStore.Models.Book;
+using BookStore.Models.User;
 using BookStore.Services.IServices;
 using Newtonsoft.Json;
 using System;
@@ -6,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UserModel;
+
 
 namespace BookStore.Services
 {

@@ -1,4 +1,4 @@
-﻿using OrderModels;
+﻿using BookStore.Models.Order;
 
 namespace BookStore.Services.IServices
 {

@@ -6,7 +6,7 @@ BookController bookController = new BookController();
 UserController userController = new UserController();
 
 //await bookController.init();
-Console.ForegroundColor = ConsoleColor.Green;
+Console.ForegroundColor = ConsoleColor.Blue;
 Console.Clear();
 Console.WriteLine("***************************************");
 Console.WriteLine("********WELCOME TO THE BOOKSTORE*******");

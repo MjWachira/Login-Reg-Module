@@ -1,16 +1,16 @@
 ﻿using BookStore.Services.IServices;
+using BookStore.Models.Order;
+using BookStore.Models.User;
 using Newtonsoft.Json;
-using OrderModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UserModel;
 
 namespace BookStore.Services
 {
-    internal class OrderServices:IOrder
+    public class OrderServices:IOrder
     {
         private readonly HttpClient _httpClient;
         private readonly string URL = "http://localhost:3000/orders";

@@ -34,6 +34,21 @@
       "UserName": "Jay",
       "Password": "123",
       "id": 7
+    },
+    {
+      "UserName": "Ray",
+      "Password": "123",
+      "id": 8
+    },
+    {
+      "UserName": "2",
+      "Password": "2",
+      "id": 9
+    },
+    {
+      "UserName": "Gunna",
+      "Password": "rodeodr",
+      "id": 10
     }
   ],
   "admin": [
@@ -45,19 +60,19 @@
   ],
   "books": [
     {
-      "id": 1,
-      "name": "test book",
-      "description": "test description"
-    },
-    {
       "Name": "kidagaa",
       "Description": "kimemuozea naanii",
       "id": 2
     },
     {
-      "Name": "john kiriamiti",
-      "Description": "he eats trees",
+      "Name": "John Kiriamiti",
+      "Description": "Famous gangster",
       "id": 3
+    },
+    {
+      "Name": "Sin city",
+      "Description": "Nairobi Diaries",
+      "id": 4
     }
   ],
   "orders": [

@@ -50,14 +50,7 @@ namespace BookStore.Controller
                 case 2:
                     await AddUser();
                     break;
-                    /*
-                case 3:
-                    await updateBook();
-                    break;
-
-                case 4:
-                    await deleteBook();
-                    break;*/
+           
 
             }
 
@@ -96,7 +89,7 @@ namespace BookStore.Controller
                     {
                         await Console.Out.WriteLineAsync("");
 
-                        await Console.Out.WriteLineAsync("login successfull....");
+                        await Console.Out.WriteLineAsync("login successful....");
                         await Console.Out.WriteLineAsync("");
                         Console.WriteLine($"########## Welcome: {userName2.ToUpper()} ##########");
                         await Console.Out.WriteLineAsync("");
